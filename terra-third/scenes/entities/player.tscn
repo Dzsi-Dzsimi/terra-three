@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dqv80om221kbb"]
+
+[ext_resource type="Script" uid="uid://cg22s34p0an8j" path="res://scenes/entities/player.gd" id="1_ucweq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4v7s"]
+radius = 16.0
+height = 58.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1345954472]
+script = ExtResource("1_ucweq")
+jump_strength = 300
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2122549847]
+shape = SubResource("CapsuleShape2D_g4v7s")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1030960320]
+zoom = Vector2(3, 3)
