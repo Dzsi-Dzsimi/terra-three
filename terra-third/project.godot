@@ -49,6 +49,13 @@ shoot={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="terrain"
+2d_physics/layer_2="player"
+2d_physics/layer_3="drones"
+2d_physics/layer_4="bullets"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
