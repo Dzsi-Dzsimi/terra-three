@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cg22s34p0an8j" path="res://scenes/entities/player.gd" id="1_ucweq"]
 [ext_resource type="Texture2D" uid="uid://de5wf7al0hknv" path="res://graphics/characters/player.png" id="2_08t41"]
 [ext_resource type="Texture2D" uid="uid://otyoj5px7yk7" path="res://graphics/ui/crosshair.png" id="3_1ie0h"]
+[ext_resource type="Texture2D" uid="uid://dijla4pisrrw8" path="res://graphics/lights/main.png" id="4_42nxq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4v7s"]
 radius = 11.0
@@ -78,7 +79,7 @@ _data = {
 &"run": SubResource("Animation_08t41")
 }
 
-[node name="Player" type="CharacterBody2D" unique_id=1345954472]
+[node name="Player" type="CharacterBody2D" unique_id=1345954472 groups=["Player"]]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_ucweq")
@@ -89,7 +90,7 @@ position = Vector2(0, 6)
 shape = SubResource("CapsuleShape2D_g4v7s")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1030960320]
-zoom = Vector2(3, 3)
+zoom = Vector2(2.5, 2.5)
 limit_left = 0
 limit_top = 0
 limit_right = 1280
@@ -119,3 +120,6 @@ vframes = 3
 [node name="Marker" type="Sprite2D" parent="." unique_id=1993649874]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_1ie0h")
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1799173965]
+texture = ExtResource("4_42nxq")
