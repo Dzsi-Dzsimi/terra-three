@@ -3850,7 +3850,7 @@ tile_set = SubResource("TileSet_1ie0h")
 [node name="Entities" type="Node2D" parent="." unique_id=951552534]
 
 [node name="Player" parent="Entities" unique_id=1345954472 instance=ExtResource("1_377w7")]
-position = Vector2(122, 65)
+position = Vector2(91, 57)
 
 [node name="Drone" parent="Entities" unique_id=708056741 instance=ExtResource("5_urvlt")]
 position = Vector2(815, 133)
@@ -3871,7 +3871,7 @@ position = Vector2(148, 258)
 position = Vector2(83, 379)
 
 [node name="Drone7" parent="Entities" unique_id=499207405 instance=ExtResource("5_urvlt")]
-position = Vector2(353, 357)
+position = Vector2(292, 319)
 
 [node name="Drone8" parent="Entities" unique_id=2146164557 instance=ExtResource("5_urvlt")]
 position = Vector2(788, 371)
